@@ -5,11 +5,11 @@ int main() { //debut du programme
 
     scanf("%d %d %d", &a, &b, &c); //saisie des variable 
 
-    if (a >= b && a >= c) { //Condition pour chercher le plus grand nombre entre les 3
+    if (a > b && a > c) { //Condition pour chercher le plus grand nombre entre les 3
 
         printf("Le plus grand nombre est : %d\n", a);
 
-    } else if (b >= a && b >= c) {
+    } else if (b > a && b > c) {
 
         printf("Le  plus grand nombre est : &d\n", b);
         
