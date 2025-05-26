@@ -1,21 +1,22 @@
 #include <stdio.h>
-int main() { //debut du programme
 
-    int a, b, c; //declaration des variables 
+// Fonction principale
+int main() {
+    int a, b, c; // Déclaration des trois entiers
 
-    scanf("%d %d %d", &a, &b, &c); //saisie des variable 
+    // Lecture des valeurs depuis l'entrée standard
+    scanf("%d %d %d", &a, &b, &c);
 
-    if (a > b && a > c) { //Condition pour chercher le plus grand nombre entre les 3
-
+    // Vérification du plus grand nombre
+    if (a >= b && a >= c) {
         printf("Le plus grand nombre est : %d\n", a);
-
-    } else if (b > a && b > c) {
-
-        printf("Le  plus grand nombre est : &d\n", b);
-        
-    } else {
-
+    }
+    else if (b >= a && b >= c) {
+        printf("Le plus grand nombre est : %d\n", b);
+    }
+    else {
         printf("Le plus grand nombre est : %d\n", c);
     }
-    return 0; // fin du programme
+
+    return 0; // Fin du programme
 }
